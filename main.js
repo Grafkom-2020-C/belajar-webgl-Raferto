@@ -4,7 +4,10 @@ function main() {
 
   // Definisi titik2 pembentuk segitiga
   var vertices = [
+    -0.5, 0.5,      // Titik A
     0.5, 0.5,       // Titik B
+    0.5, 0.5,       // Titik B
+    0.5, -0.5,       // Titik C
     0.5, -0.5,       // Titik C
     -0.5, 0.5      // Titik A
   ];
@@ -73,6 +76,6 @@ function main() {
 
   var primitive = gl.LINES;
   var offset = 0;
-  var nVertex = 3;
+  var nVertex = 6;
   gl.drawArrays(primitive, offset, nVertex);
 }
